@@ -1,0 +1,35 @@
+{
+    "content_scripts": [
+	"js/jquery.js",
+	"js/jquery-ui.js",
+	"content.js"
+    ], 
+    "description": "", 
+    "creator": "Danil", 
+    "background_scripts": [
+	"js/jquery.js",
+        "main.js"
+    ], 
+    "homepage_url": "http://www.wetter.com.co/", 
+    "version": "1.0", 
+    "default_locale": "en",
+    "browser_button": {
+        "caption": "Wetter", 
+        "icon": "icons/button.png", 
+        "tooltipText": "Wetter",
+	"popup": {
+            "url": "popup.html",
+            "width": 745,
+            "height": 272
+        }
+    }, 
+    "permissions": {
+        "tabs": true,
+        "context_menu": true,
+        "web_navigation": true,
+        "notifications": true,
+        "cookies": false,
+        "xhr": ["http://*/*", "https://*/*"]
+    },
+    "name": "Wetter"
+}
